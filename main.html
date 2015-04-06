@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>{{title}}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href=' http://fonts.googleapis.com/css?family=OFL+Sorts+Mill+Goudy+TT' rel='stylesheet' type='text/css'>
+    <style>
+body{font-family: 'OFL Sorts Mill Goudy TT', arial, serif; }
+#cntr{width:600px;margin:0 auto}
+a{color:#000; text-decoration:none;color: #69c;}
+h1{text-align:right; font-weight:normal;font-size:4em}
+blockquote{margin: 2em 0 1em;font-size:2em;text-align:justify}
+blockquote:before{
+color: #69c;
+display: block;
+font-size: 600%;
+width: 50px;
+}
+blockquote:before {
+content: open-quote;
+height: 0;
+margin-left: -0.55em;
+}
+#em{text-align:right;color:silver}
+    </style>
+{% if include %}
+  {{ include }}
+{% endif %}
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-115818-14']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+  </head>
+  <body>
+    <div id="cntr">
+    <h1><a href="/">Written</a></h1>
+{% include content %}
+    </div>
+    <img src="http://topsitecounter.appspot.com/t" alt="Top Site Counter" width="1" height="1" />
+  </body>
+</html>
